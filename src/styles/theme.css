@@ -1,0 +1,237 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #09090B;
+  --foreground: #FAFAFA;
+  --card: #141416;
+  --card-foreground: #FAFAFA;
+  --popover: #141416;
+  --popover-foreground: #FAFAFA;
+  --primary: #D4AF37;
+  --primary-foreground: #09090B;
+  --secondary: #1E1E22;
+  --secondary-foreground: #FAFAFA;
+  --muted: #27272A;
+  --muted-foreground: #A8A8B3;
+  --accent: #C49B2C;
+  --accent-foreground: #09090B;
+  --destructive: #EA5455;
+  --destructive-foreground: #FAFAFA;
+  --border: rgba(255, 255, 255, 0.06);
+  --input: #1E1E22;
+  --input-background: #141416;
+  --switch-background: #27272A;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --ring: #D4AF37;
+  --chart-1: #D4AF37;
+  --chart-2: #28C76F;
+  --chart-3: #00CFE8;
+  --chart-4: #FF9F43;
+  --chart-5: #EA5455;
+  --radius: 1rem;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-info: #38BDF8;
+  --color-error: #F87171;
+  --sidebar: #09090B;
+  --sidebar-foreground: #FAFAFA;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #09090B;
+  --sidebar-accent: #141416;
+  --sidebar-accent-foreground: #FAFAFA;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #D4AF37;
+}
+
+@theme inline {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-info: #38BDF8;
+  --color-error: #F87171;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #E8C547;
+  --color-gold-muted: #B8962E;
+  --color-surface: #1A1A1E;
+  --color-surface-hover: #222226;
+  --color-divider: rgba(255, 255, 255, 0.06);
+  --color-elevated: #1E1E22;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  html {
+    font-size: var(--font-size);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.005em;
+  }
+
+  h4 {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  button {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  input, textarea, select {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+@layer utilities {
+  .card-glow {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.05),
+      0 8px 24px rgba(0, 0, 0, 0.22),
+      0 16px 38px rgba(0, 0, 0, 0.14);
+  }
+
+  .card-glow-gold {
+    box-shadow:
+      0 0 0 1px rgba(212, 175, 55, 0.11),
+      0 8px 24px rgba(212, 175, 55, 0.06),
+      0 16px 38px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-glow-hover {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.08),
+      0 10px 28px rgba(0, 0, 0, 0.24),
+      0 18px 42px rgba(0, 0, 0, 0.16);
+  }
+
+  .btn-glow-gold {
+    box-shadow:
+      0 0 0 1px rgba(212, 175, 55, 0.18),
+      0 8px 18px rgba(212, 175, 55, 0.12),
+      0 12px 28px rgba(0, 0, 0, 0.14);
+  }
+
+  .btn-glow-gold:hover {
+    box-shadow:
+      0 0 0 1px rgba(232, 197, 71, 0.24),
+      0 10px 22px rgba(212, 175, 55, 0.14),
+      0 14px 30px rgba(0, 0, 0, 0.16);
+  }
+
+  .btn-glow-gold:active {
+    box-shadow:
+      0 0 0 1px rgba(184, 150, 46, 0.22),
+      0 4px 10px rgba(212, 175, 55, 0.08),
+      0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .bg-page-gradient {
+    background: linear-gradient(180deg, #111114 0%, #0A0A0D 100%);
+  }
+
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(212, 175, 55, 0.02) 100%);
+  }
+
+  .bg-card-gradient {
+    background: linear-gradient(168deg, #1C1C20 0%, #161618 40%, #131315 100%);
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
