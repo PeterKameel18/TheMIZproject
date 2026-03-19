@@ -6,7 +6,9 @@ MIZ Gym App is a frontend-only gym management experience built to simulate a rea
 ---
 
 ## 🎥 Demo
-![App Demo](PrototypeScreenshots/demo.gif)
+<p align="center">
+  <img src="./PrototypeScreenshots/demo.gif" width="600"/>
+</p>
 
 This demo showcases the main app flow and user experience.
 
@@ -23,35 +25,37 @@ This demo showcases the main app flow and user experience.
 ---
 
 ## 📱 Screenshots
-### Dashboard
-![Dashboard](PrototypeScreenshots/dashboard.png)
+### Dashboard & Status
+<p align="center">
+  <img src="./PrototypeScreenshots/dashboard.png" width="300"/>
+  <img src="./PrototypeScreenshots/gym_status.png" width="300"/>
+</p>
 
-### Gym Status
-![Gym Status](PrototypeScreenshots/gym_status.png)
+<br/>
 
-### Booking History
-![Booking History](PrototypeScreenshots/history.png)
+### Booking & QR
+<p align="center">
+  <img src="./PrototypeScreenshots/history.png" width="300"/>
+  <img src="./PrototypeScreenshots/session.png" width="300"/>
+</p>
 
-### Book a Session
-![Book a Session](PrototypeScreenshots/session.png)
+<p align="center">
+  <img src="./PrototypeScreenshots/qr.png" width="300"/>
+  <img src="./PrototypeScreenshots/announcements.png" width="300"/>
+</p>
 
-### QR Entry Pass
-![QR Entry Pass](PrototypeScreenshots/qr.png)
+<br/>
 
-### Announcements
-![Announcements](PrototypeScreenshots/announcements.png)
+### Profile & Info
+<p align="center">
+  <img src="./PrototypeScreenshots/profile1.png" width="300"/>
+  <img src="./PrototypeScreenshots/profile2.png" width="300"/>
+</p>
 
-### Profile Overview
-![Profile Overview](PrototypeScreenshots/profile1.png)
-
-### Membership Details
-![Membership Details](PrototypeScreenshots/profile2.png)
-
-### Login Screen
-![Login Screen](PrototypeScreenshots/login.png)
-
-### Gym Info
-![Gym Info](PrototypeScreenshots/gym_info.png)
+<p align="center">
+  <img src="./PrototypeScreenshots/login.png" width="300"/>
+  <img src="./PrototypeScreenshots/gym_info.png" width="300"/>
+</p>
 
 ---
 
